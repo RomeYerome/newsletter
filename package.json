@@ -1,0 +1,18 @@
+{
+  "name": "apinewsletter",
+  "version": "1.0.0",
+  "description": "Newsletter Signup app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rome Ye",
+  "license": "ISC",
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.75",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "formidable": "^3.2.3"
+  }
+}
