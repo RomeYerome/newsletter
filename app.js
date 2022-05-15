@@ -11,6 +11,9 @@ const axios = require('axios');
 // Create instance of Express
 const app = express();
 
+// Define port for heroku
+const port = process.env.PORT;
+
 // Require mailchimp library
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
@@ -98,7 +101,7 @@ app.post("/", (req, res)=>{
 
 
 // Set up server to listen on port
-app.listen(3000, ()=>{
+app.listen(port || 3000, ()=>{
     console.log("Server running on port 3000");
 })
 
